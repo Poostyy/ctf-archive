@@ -4,7 +4,7 @@
 
 **Problem Name : Flag Hunters**
 
-**Idea Type : Understanding a Code to find flag position**
+**Idea Type : Somewhere Obvious**
 
 We first focus on this line of code
 ```python
