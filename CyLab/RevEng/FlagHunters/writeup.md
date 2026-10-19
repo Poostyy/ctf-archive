@@ -19,7 +19,7 @@ The ether’s ours to conquer, '''\
 ```
 Notice that flag var possibly consist of the flag we're looking for
 
-if we run the code, it runs the song and the consist of secret_intro + other part of the song
+if we run the code, it runs the song and its consist of secret_intro + other part of the song
 
 the main thing we see is that it never reads the secret intro which made it obvious that the flag is probably there hence the problem simplifies into : 
 
