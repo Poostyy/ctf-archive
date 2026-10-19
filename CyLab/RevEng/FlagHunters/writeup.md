@@ -19,7 +19,7 @@ The ether’s ours to conquer, '''\
 ```
 Notice that flag var possibly consist of the flag we're looking for
 
-if we run the code, it runs the song and its consist of secret_intro + other part of the song
+if we run the code, it runs the song and it consist of secret_intro + other part of the song
 
 the main thing we see is that it never reads the secret intro which made it obvious that the flag is probably there hence the problem simplifies into : 
 
@@ -48,4 +48,4 @@ which leaves us to this part of the code :
         time.sleep(0.5)
         lip += 1
 ```
-from that code, we know lip is for the index of verse and song_lines is an array of the every line, hence it's obvious we just need to find a way to acces the first verse (the intro which consist the flag) and it happens when we enter the return case then we take the second word which is [0 - 9]. Since we want 0 we just need to input with RETURN 0;
+from that code, we know lip is for the index of verse and song_lines is an array of every single line, hence it's obvious we just need to find a way to acces the first verse (the intro which consist the flag) and it happens when we enter the return case then we take the second word which is [0 - 9]. Since we want 0 (cause secret intro starts from 0) we just need to input with RETURN 0;
