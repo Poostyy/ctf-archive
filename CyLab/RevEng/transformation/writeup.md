@@ -16,10 +16,15 @@ each iteration takes up 2 consecutive char idx from the flag, hence every charac
 s[0] = chr((ord(flag[0]) << 8) + ord(flag[1]))
 s[1] = chr((ord(flag[2]) << 8) + ord(flag[3]))
 and so on...
+
 we need decode every char and split it into 2. We know that << 8 means shifting the bit to the left side eight times which also mean multipliying it by 2^8. Suppose we have 9, then 9 << 8 equals to 9 * 2^8. and then this gives us
+
 s[0] = chr((ord(flag[0]) * 2^8) + ord(flag[1]))
+
 ord(s[0]) = ord(flag[0] * 2^8) + ord(flag[1])
+
 ord(s[0]) % 2 ^ 8 = ord(flag[1])
+
 floor(ord(s[0]) / 2^8) = ord(flag[0]) :: since ord(flag[1]) < 2^8
 
 then we get both ord(flag[0]) and ord(flag[1]) and we can do this for every index
